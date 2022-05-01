@@ -1,0 +1,44 @@
+<table border="1" class="canva" width="100%">
+  <tr>
+    <td rowspan="2">
+      Партнеры
+      <div class="container" dragula="VAMPIRES" [(dragulaModel)]="vamps">
+        <article class="vamp" *ngFor="let vamp of vamps">
+          <p>User {{ vamp.name }}</p>
+          <input [(ngModel)]="vamp.name">
+        </article>
+      </div>
+      <div class="add_card">
+      <input [(ngModel)]="temp_text" >
+        <button></button>
+      </div>
+    </td>
+    <td class="container" dragula="VAMPIRES" [(dragulaModel)]="vamps2">
+      Виды деятельности
+      <article class="vamp" *ngFor="let vamp of vamps2">
+        <p></p>
+        <input [(ngModel)]="vamp.name" />
+      </article>
+      <div class="card_block">
+        <article class="card">
+          ЛяляляЛяляляЛя ляляЛяляляЛялял яЛяляляЛяляля
+        </article>
+        <article class="card">Ляляля</article>
+        <article class="card">Ляляля</article>
+        <article class="card">Ляляля</article>
+      </div>
+    </td>
+    <td rowspan="2">Ценности</td>
+    <td>Отношения с покупателями</td>
+    <td rowspan="2">Покупатели</td>
+  </tr>
+  <tr>
+    <td>Ресурсы</td>
+    <td>Каналы сбыта</td>
+  </tr>
+  <tr>
+    <td colspan="3">Затраты</td>
+    <td colspan="2">Доходы</td>
+  </tr>
+</table>
+<pinch-zoom> </pinch-zoom>
